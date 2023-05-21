@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/cachorrinho.png" type="image/x-icon">
+    <script src="./cp3.js" defer></script>
+    <title>cadastro</title>
+</head>
+
+<body>
+    <header class="cabecalho" id="header">
+        <div class="txt_checkbox">
+            <p class="txt_switch" id="texto_sw">modo escuro</p>
+            <label class="switch">
+                <input class="bolinha" type="checkbox" id="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+    <main class="fundo_conteudo" id="fd_cont">
+        <section class="section_form">
+            <div class="fundo_form">
+                <div class="form">
+                    <h2 class="titulo_h2" id="tit_h2">cadastrar</h2>
+                    <form action="" class="fundo_inputs">
+                        <div class="inputs">
+                            <label for="input_1" class="titulo_input" id="label_1">Nome</label>
+                            <input type="text" name="txtPriNm" id="input_1"
+                                placeholder="Digite seu primeiro nome(min 5 caracteres)" class="input" onclick="verifica()">
+                                <p id="alerta_1" class="p_alerta"></p>
+                        </div>
+                        <div class="inputs">
+                            <label for="input_2" class="titulo_input" id="label_2">Sobrenome</label>
+                            <input type="text" name="txtSegNm" id="input_2"
+                                placeholder="Digite seu segundo nome(min 5 caracteres)" class="input">
+                            <p id="alerta_2" class="p_alerta"></p>
+                        </div>
+                        <div class="inputs">
+                            <label for="input_3" class="titulo_input" id="label_3">Email</label>
+                            <input type="email" name="txtEmail" id="input_3" placeholder="Digite seu email(Ex: exemplo@exemplo.com)"
+                                class="input">
+                            <p id="alerta_3" class="p_alerta"></p>
+                        </div>
+                        <div class="inputs">
+                            <label for="input_4" class="titulo_input" id="label_4">Senha</label>
+                            <input type="password" name="senha" id="input_4" placeholder="Digite sua senha(min 6 caracteres e max 8)"
+                                class="input">
+                            <p id="alerta_4" class="p_alerta"></p>
+                        </div>
+                        <div class="inputs">
+                            <label for="input_5" class="titulo_input" id="label_5">Confirmar senha</label>
+                            <input type="password" name="senha2" id="input_5"
+                                placeholder="Confirme sua senha" class="input">
+                            <p id="alerta_5" class="p_alerta"></p>
+                        </div>
+                        <input type="submit" value="Enviar" class="btn_cad" id="botao_cad">
+                    </form>
+                </div>
+                <img src="./img/pngegg.png"
+                    alt="imagem de animação em vetor de um computador com uma tag de fechamento na tela com o fundo roxo"
+                    class="img_form">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
